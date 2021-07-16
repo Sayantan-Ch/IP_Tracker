@@ -1,18 +1,19 @@
 
 
-var query=document.getElementById('ip').innerHTML;
-console.log(query);
-var query = "24.48.0.1";
+var query;
+
 function ip_address() {
     
+  query=document.getElementById('ip').value;
+
      var settings ={
     "async": true,
     "crossDomain": true,
     "url": `http://ip-api.com/json/${query}`,
     "method": "GET"
-     }
+     };
 
- };
+ 
 
   $.ajax(settings).done(function (response) {
     console.log(response);
@@ -24,3 +25,4 @@ function ip_address() {
     $("#item_city").append(response.city);
     $("#item_zip").append(response.zip);
   });
+};
