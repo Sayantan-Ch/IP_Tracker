@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,16 +24,19 @@
     </header>
     <div class="mid">
         <div class="container">
-            <div class="item" id="item_country">Country: </div>
-            <div class="item" id="item_regionName">Region: </div>
-            <div class="item" id="item_city">City: </div>
-            <div class="item" id="item_zip">Area Code: </div>
-            <div class="item" id="item_timezone">Timezone: </div>
-            <div class="item" id="item_input">
-                <input id="ip" type="text"  >
-                <button onclick="ip_address()"> Submit</button>
-
-                
+            <div class="items">
+                <div class="item" id="item_country">Country: </div>
+                <div class="item" id="item_regionName">Region: </div>
+                <div class="item" id="item_city">City: </div>
+                <div class="item" id="item_zip">Area Code: </div>
+                <div class="item" id="item_timezone">Timezone: </div>
+            </div>
+            <div class="input" id="item_input">
+                <h1>
+                    Enter your IP address
+                </h1>
+                <input id="ip" type="text">
+                <button class="button_input" onclick="ip_address()"> Submit</button>
             </div>
         </div>
         <footer></footer>
