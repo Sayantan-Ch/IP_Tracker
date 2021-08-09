@@ -14,14 +14,12 @@ header {
 .container{
     height: 544px; 
     width: 100%;
-    
     display: flex;
     flex-direction: row;
 }
 .items{
     height: 544px; 
     width: 100%;
-    
     display: flex;
     flex-direction: column;
 }
